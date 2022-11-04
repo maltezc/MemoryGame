@@ -1,0 +1,24 @@
+#game div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5%;
+}
+
+.heroImage {
+  background-image: url("https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80");
+
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.colorCard {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
