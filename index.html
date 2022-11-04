@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- todo: add form floating to all labels. see 32:00 on Bootstrap 5 crash course -->
+      <div id="Title" class="text-center my-5">
+        <h1>Welcome to the Meme Generator!</h1>
+      </div>
+
+      <form>
+        <!-- Meme URL -->
+        <div class="form-group row my-3 mx-5">
+          <label for="memeUrl" class="col-sm-2 col-form-label">Meme URL</label>
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="memeUrl"
+              placeholder="Meme URL"
+            />
+          </div>
+        </div>
+        <!-- TOP TEXT -->
+        <div class="form-group row my-3 mx-5">
+          <label for="inputTopText" class="col-sm-2 col-form-label"
+            >Top Text</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="inputTopText"
+              placeholder="Place your top text here!"
+            />
+          </div>
+        </div>
+
+        <!-- BOTTOM TEXT -->
+        <div class="form-group row my-3 mx-5">
+          <label for="inputBottomText" class="col-sm-2 col-form-label"
+            >Bottom Text</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="inputBottomText"
+              placeholder="Place your bottom text here!"
+            />
+          </div>
+        </div>
+
+        <!-- submit button -->
+        <div class="form-group row text-center mt-5">
+          <!-- <div class="col-sm-10"> -->
+          <button
+            id="createMemeButton"
+            type="submit"
+            class="btn btn-primary text-center"
+          >
+            Create Meme!
+          </button>
+        </div>
+      </form>
+
+      <!-- history of memes created -->
+
+      <div class="memeHistory text-center mt-5">
+        <hr />
+        <h1 class="mb-5">Meme History</h1>
+        <ul id="memeHistory">
+
+        </ul>
+        <hr />
+      </div>
+    </div>
+
+    <div class="footer my-5"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
